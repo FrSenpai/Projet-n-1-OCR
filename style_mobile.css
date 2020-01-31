@@ -1,0 +1,222 @@
+
+/* HEADER : LOGO + NAVIGATION */
+
+header
+{	
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 15px;
+	z-index: 10; /* Place l'header au dessus de tout */
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	align-items: center;
+}
+
+#logo
+{
+	width: 50%;
+}
+
+.liennav:hover
+{
+	border-bottom: 3px rgb(92, 173, 211) solid;
+	border-top: none;
+}
+
+li
+{
+	margin-right: 25px;
+	list-style-type: none; /* Supprime les puces */
+	font-family: Roboto-Regular, Arial, "Arial Black", sans-serif;
+	font-size: 1.4em;
+}
+
+/* SECTION BANNIERE DU SITE */
+
+#div-banniere /* Conteneur de la bannière */
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+	width: 100%;
+}
+
+#banniere /* Image de la bannière */
+{
+	display: none;
+}
+
+#conteneur-titre-banniere
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+	margin-top: 150px;
+	width: 100%;
+	position: relative;
+	left: 0%;
+}	
+
+#texte-banniere
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	left: 0%;
+	text-align: center;
+}
+
+.fa-chevron-left
+{
+	display: none;
+}
+
+.fa-chevron-right
+{
+	display: none;
+}
+
+/* NOS SERVICES */
+
+.conteneur-services /* Conteneur icones + texte de nos services */
+{
+	display: 	flex;	
+	flex-direction: 	row;
+	margin-top: 	75px;
+	width: 90%;	
+
+}
+
+#image-nos-services
+{
+	display: none;
+}
+
+#nos-services /* Conteneur des services */
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	width: 100%;
+}
+.ligne-service
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 7%;
+}
+.p-services p 
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	text-align: justify;
+	width: 100%;
+	margin: 0;
+	margin-left: 8%;
+}
+
+.p-services h3
+{
+	margin-left: 8%;
+}
+
+/* SECTION NOS PROJETS */
+
+#section-projet
+{
+	background-color: rgb(245,245,245);
+	margin-top: 30px;
+
+}
+
+#nav-projets
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+}
+
+#ul-projets
+{
+	display: flex;	
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.li-projets:hover
+{
+	color: white;
+	background-color: rgb(82,159,195);
+	border-bottom: 3px solid rgb(70,140,173);
+}
+.li-projets
+{
+	position: relative;
+	left: -5%;
+	background-color: rgb(229,229,229);
+	border-bottom: 3px solid rgb(229, 229, 229);
+	text-align: center;
+	padding: 0.5em;
+	margin: auto;
+	font-size: 1em;
+
+}
+
+.portfolio_image
+{
+	width: 80%;
+	margin: auto;
+}
+
+.image-description {
+	color: white;
+	padding: 3% 0 0 3%;
+	position: relative;
+	top: 65%;
+	width: 97%;
+	height: 29.5%;
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+/* SECTION CONTACT */
+
+iframe
+{
+	display: none; /* La map n'est pas visible sur version mobile */
+}
+
+#map_blue_overlay
+{
+	display: none; /* L'overlay n'est pas visible sur version mobile */
+}
+
+#contact 
+{
+	position: relative;
+	height: 45em;
+	width: 100%;
+	margin-top: 50px;
+}
+
+
+#contact_form h3
+{
+	position: relative;
+	padding-bottom: 30px;
+	left: -1.30em;
+}
+

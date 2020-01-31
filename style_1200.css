@@ -1,0 +1,34 @@
+/* SECTION NOS SERVICES */
+
+#nos-services /* Conteneur des services */
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 20px 0px 20px;
+	width: auto;
+}
+
+/* SECTION NOS PROJETS */
+
+#conteneur-projet
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.portfolio_image
+{
+	width: 17%;
+}
+.image-description {
+	color: white;
+	padding: 3% 0 0 3%;
+	position: relative;
+	top: 45%;
+	width: 97%;
+	height: 48%;
+	background-color: rgba(0, 0, 0, 0.5)
+}
