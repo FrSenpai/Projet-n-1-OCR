@@ -1,0 +1,45 @@
+
+/* SECTION BANNIERE DU SITE */
+
+#banniere /* Image de la bannière */
+{
+	width: auto;
+	height: 450px;
+	box-shadow: 0px 20px 80px rgba(31, 73, 125, 0.3);
+	margin-top: 50px;
+}
+
+/* SECTION NOS SERVICES */
+
+#nos-services /* Conteneur des services */
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 20px 0px 20px;
+	width: auto;
+}
+
+/* SECTION NOS PROJETS */
+
+#conteneur-projet /* Conteneur des projets */
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.portfolio_image
+{
+	width: 40%;
+}
+.image-description {
+	color: white;
+	padding: 3% 0 0 3%;
+	position: relative;
+	top: 64%;
+	width: 97%;
+	height: 30.5%;
+	background-color: rgba(0, 0, 0, 0.5)
+}

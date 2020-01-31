@@ -1,0 +1,97 @@
+/* SECTION BANNIERE DU SITE */
+
+#div-banniere
+{
+	overflow: hidden;
+	height: 600px;
+}
+
+#banniere /* Image de la bannière */
+{
+	display: none;
+}
+
+#texte-banniere
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	left: 0%;
+	top: 40%;
+	width: 80%;
+	color: black;
+}
+
+#texte-banniere h1
+{
+	text-align: center;
+}
+
+#fa-chevron-left
+{
+	display: none;
+}
+
+#conteneur-titre-banniere
+{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	word-wrap: break-word;
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+
+/* NOS SERVICES */
+
+#nos-services h2
+{
+	width: 20%;
+	text-align: center;
+}
+
+#liste-service
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.conteneur-services
+{
+	width: 70%;
+	align-self: center;
+}
+
+
+/* NOS PROJETS */
+
+#conteneur-projet
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.portfolio_image
+{
+	width: 35%;
+}
+
+.image-description 
+{
+	color: white;
+	padding: 3% 0 0 3%;
+	position: relative;
+	top: 55%;
+	width: 97%;
+	height: 38.5%;
+	background-color: rgba(0, 0, 0, 0.5)
+}

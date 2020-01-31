@@ -1,0 +1,605 @@
+/* POLICES DU SITE */
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.eot');
+    src: url('fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fontawesome-webfont.woff') format('woff'),
+         url('fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('fonts/fontawesome-webfont.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('fonts/Roboto-Regular.eot');
+    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular.ttf') format('truetype'),
+         url('fonts/Roboto-Regular.svg#acmeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GENERAL */
+
+#bloc-page /* Bloc de la page */
+{
+	margin: auto;
+	width: auto;
+	height: auto;
+}
+
+body
+{
+	margin: 0;
+	width: 100%;
+}
+iframe
+{
+	border:0;
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+h1
+{
+	font-weight: bold;
+	font-family: Roboto-bold, Arial, "Arial Black", sans-serif;
+}
+
+h2
+{
+	font-weight: bold;
+	font-family: Roboto-bold, Arial, "Arial Black", sans-serif;
+}
+
+h3
+{
+	margin: 0;
+	font-weight: bold;
+	font-family: Roboto-Regular, Arial, "Arial Black", sans-serif;
+}
+h4
+{
+	margin: 0;
+	font-weight: bold;
+	font-family: Roboto-Regular, Arial, "Arial Black", sans-serif;
+}
+
+p
+{
+	text-align: center;
+	font-family: Roboto-Regular, Arial, "Arial Black", sans-serif;
+}
+
+/* HEADER DU SITE */
+
+header
+{	
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 15px;
+	width: 100%;
+	z-index: 10; /* Place l'header au dessus de tout */
+	background-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+#ul-nav
+{
+	display: flex;
+	flex-direction: row;
+}
+li
+{
+	margin-right: 15px;
+	list-style-type: none; /* Supprime les puces */
+	font-family: Roboto-Regular, Arial, "Arial Black", sans-serif;
+	font-size: 1.2em;
+}
+.liennav:hover
+{
+	border-top: 3px rgb(92, 173, 211) solid;
+	padding-top: 34px;
+}
+
+/* SECTION BANNIERE DU SITE */
+
+#div-banniere /* Conteneur de la bannière */
+{
+	display: flex;
+	flex-direction: column;
+	height: 1000px;
+}
+
+#banniere /* Image de la bannière */
+{
+	width: auto;
+	height: 800px;
+	box-shadow: 0px 10px 40px rgba(31, 73, 125, 0.2);
+	margin-top: 50px;
+}
+
+#conteneur-titre-banniere
+{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	top: -45%;
+	word-wrap: break-word;
+	color: white;
+	width: 100%;
+	height: 100%;
+}
+#texte-banniere
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	left: -15%;
+	width: 40%;
+}
+.fa-chevron-left {
+	padding: 1.2% 0.7% 1.2% 0.2%;
+	border-radius: 0 50px 50px 0;
+	left: -9.25%;
+	position: relative;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.fa-chevron-right {
+	padding: 1.2% 0.2% 1.2% 0.7%;
+	border-radius: 50px 0 0 50px;
+	right: -9.25%;
+	position: relative;
+	background-color: rgba(0,0,0,0.2);
+}
+#webagencystrong
+{
+	color: rgb(92,173,211);
+}
+#a-plus-info /* Bouton plus d'infos situé dans la bannière */
+{
+	color: white;
+	font-size: 1.1em;
+	background-color: rgb(92,173,211);;
+	padding: 10px;
+	width: 90px;
+	text-align: center;
+	border-bottom: 3px solid rgb(68,148,187);
+	border-radius: 3px;
+	margin-top: 3%;
+}
+
+/* SECTION NOS SERVICES */
+
+#nos-services /* Conteneur des services */
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	width: auto;
+}
+#liste-services /* Liste des services proposés */
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 5%;
+}
+.conteneur-texte-services
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	top: -8%;
+	right: 15%;
+}
+.titre-services
+{
+	text-align: left;
+	margin: 0;
+}
+.fa-chart-line
+{
+	padding: 20px;
+	border: 1px #C9D3D6 solid;
+	border-radius: 100px;
+	width: 20px;
+	height: 20px;
+	font-size: 1.5rem; 
+	color: #52CAF2; 
+}
+.fa-chart-pie
+{
+	padding: 20px;
+	border: 1px #C9D3D6 solid;
+	border-radius: 100px;
+	width: 20px;
+	height: 20px;
+	font-size: 1.5rem;
+	color: #52CAF2
+}
+.fa-cubes
+{
+	padding: 20px;
+	border: 1px #C9D3D6 solid;
+	border-radius: 100px;
+	width: 20px;
+	height: 20px;
+	font-size: 1.5rem;
+	color: #52CAF2
+}
+.fa-circle
+{
+	color: #52CAF2; 
+	margin-top: 25px; 
+	margin-left: -10px;
+}
+#cercle-bleu-blanc
+{
+	color: #52CAF2; 
+	margin-top: 25px; 
+	margin-left: -10px;
+	background-color: white;
+	padding: 5px;
+	border-radius: 30px;
+}
+.fa-dot-circle
+{
+	color: white;
+	background-color: #52CAF2;
+	border-radius: 25px;
+}
+#conteneur-icone-services
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	right: 50px;
+}
+.ombre-icone-services
+{
+	margin-left: 15px;
+	margin-right: 15px;
+	height: 5px;
+	box-shadow: inset 0 -2px  2px -2px rgba(31, 73, 125, 1); 
+	width: 150px;
+	position: relative;
+	bottom: -0.70em;
+	right: 0.35em;
+}
+.conteneur-ombre-icones-nos-services
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+}
+#section-services
+{
+	display: flex;
+	flex-direction: column;
+}
+#image-nos-services
+{
+	width: auto;
+	height: 350px;
+	margin-top: 2%;
+}
+#liste-service
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.ligne-service
+{
+	display: flex;
+	flex-direction: column;
+}
+.paragraphe-services
+{
+	text-align: justify;
+	position: 	relative;	
+	left: -20%;		
+	margin: 0;
+
+}
+.conteneur-services
+{
+	display: 	flex;	
+	flex-direction: 	row;
+	margin-top: 	75px;	
+
+}
+.conteneur-titre-services
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100px;
+	position: relative;
+	bottom: 30px;
+
+}
+.p-services p 
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	text-align: justify;
+	width: 85%;
+	margin: 0;
+	margin-left: 4%;
+}
+.p-services h3
+{
+	margin-left: 4%;
+}
+
+/* SECTION NOS PROJETS */
+
+#section-projet
+{
+	width: auto;
+	background-color: rgb(245,245,245);
+	margin-top: 100px;
+}
+#conteneur-projet
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#ul-projets
+{
+	display: flex;	
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 30px;
+}
+.li-projets:hover
+{
+	color: white;
+	background-color: rgb(82,159,195);
+	border-bottom: 3px solid rgb(70,140,173);
+}
+.li-projets
+{
+	position: relative;
+	background-color: rgb(229,229,229);
+	border-bottom: 3px solid rgb(229, 229, 229);
+	text-align: center;
+	padding: 0.5em;
+	margin: auto;
+
+}
+#nav-projets
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#nav-projets i
+{
+	opacity: 0; /* L'icone n'est pas visible */
+	width: 100%;
+	color: rgb(70,140,173);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 0.7em;
+}
+#nav-projets i:hover
+{
+	opacity: 1; /* L'icone est visible lors du survol */
+}
+
+
+#portfolio-projets
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+	margin-top: 50px;
+}
+.portfolio_image
+{
+	width: 19%;
+}
+.portfolio_image img {
+	width: 100%;
+	height: 100%;
+}
+
+figure {
+	position: relative;
+	width: 20%;
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+figcaption:hover {
+	opacity: 1;
+}
+
+.ligne-pointbleu .fa-circle {
+	position: relative;
+	border: 5px solid white;
+	border-radius: 50%;
+	line-height: 0.85em; /* Evite l'écart entre le cercle et la bordure */
+}
+
+.image-description {
+	color: white;
+	padding: 3% 0 0 3%;
+	position: relative;
+	top: 62%;
+	width: 97%;
+	height: 32%;
+	background-color: rgba(0, 0, 0, 0.5)
+}
+.image-description p {
+	margin: auto; /* ANNULE MARGE DE BASE */
+	position: relative;
+	top: 0.3em;
+
+}
+.image-description h4 {
+	margin: 0; /* ANNULE MARGE DE BASE */
+	position: relative;
+	bottom: 0.2em;
+}
+
+.image-description .fa-circle {
+	font-size: 2.5em;
+	position: absolute;
+	top: -1.15em;
+	right: 0.25em;
+}
+
+.image-description .fa-eye {
+	position: absolute;
+	top: -0.5em;
+	right: 1.30em;
+	font-size: 1em;
+}
+
+/* SECTION CONTACT */
+
+#contact 
+{
+	position: relative;
+	height: 45em;
+	width: 100%;
+	margin-top: 50px;
+}
+
+iframe 
+{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+address
+{
+	margin-bottom: 15px;
+	position: relative;
+	top: 1.5em;
+	left: -1.5em;
+	font-style: normal;
+}
+
+.case-formulaire
+{
+	margin-bottom: 20px;
+	position: relative;
+	left: -1.5em;
+	top: 2.5em;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-family: Roboto-Regular, Arial, "Arial Black", sans-serif;
+}
+
+#map_blue_overlay 
+{
+	height: 45em;
+	width: 100%;
+	z-index: 2; /* L'overlay passe au dessus de la carte(même système qu'order) */
+	background-color: rgba(66, 134, 244, 0.2); /* Opacité fixé à 0.2 pour l'overlay */
+	position: absolute;
+}
+
+#contact_form 
+{
+	background-color: rgba(255, 255, 255, 0.7);
+	z-index: 3; /* Le formulaire passe au dessus de la carte ainsi que de l'overlay (même système qu'order) */
+	position: absolute;
+	height: 500px;
+	top: 10%;
+	right: 10%;
+	padding: 2em 3em;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact_form h3
+{
+	position: relative;
+	top: 0.5em;
+	left: -1.30em;
+}
+#envoyer-contact
+{
+	background-color: rgb(92,173,211);
+	border-bottom: 3px solid rgb(68,148,187);
+	border-radius: 4px;
+	padding: 5px;
+	position: relative;
+	color: white;
+	top:1.5em;
+	left: -1.5em;
+	font-family: Roboto-Regular, Arial, "Arial Black", sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+	width: 40%;
+	height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
